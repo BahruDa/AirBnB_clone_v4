@@ -155,8 +155,8 @@ No known bugs at this time.
 
 ## Authors
   
-  Bahru Mohammed
-  Ahmed Abdoelrhman
+Bahru Mohammed
+Ahmed Abdoelrhman
   
 Second part of Airbnb: Joann Vuong
 ## License
