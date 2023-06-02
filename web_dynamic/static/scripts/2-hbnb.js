@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   const amenities = {};
 
   function setAmenities (dataId, dataName) {
@@ -21,4 +22,14 @@ $(document).ready(function () {
     }
     $('.amenities h4').text($.map(amenities, (val) => val).join(', '));
   });
+  
+
+    const url = "http://" + window.location.hostname + ":5001/api/v1/status/";
+    $.get(url,function (response){
+      if (response.status === 'OK'){
+        $('#api_status').addClass('available');
+      } else {
+        $('#api_status').removeClass('available');
+      }
+    });
 });
